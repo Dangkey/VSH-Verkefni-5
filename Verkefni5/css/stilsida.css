@@ -1,0 +1,420 @@
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;  
+  font-family: 'Poppins', sans-serif; 
+}
+footer{
+  background-color: #2D2D2D
+}
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;   
+}
+
+.wrapper > * {  
+  flex: 1 100%;
+}
+.aside{
+
+}
+.banner{
+
+  background-image: url("../images/harpan.jpg");
+  
+    /* Set a specific height */
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: cover;    
+    background-repeat: no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.banner-text{
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  top: 50px;
+  left: 70px;  
+  text-align: left;
+   word-wrap: break-word;
+   width: 500px;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+.flex1{
+    background-color: #2D2D2D;
+    /* Set a specific height */
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    
+    
+}
+.flex1text{
+  position: relative;
+  top: 200px;
+  left: 30px;  
+  text-align: left;
+   word-wrap: break-word;
+   width: 500px;
+
+}
+
+.flex2 {
+  background-color:black;  
+    /* Set a specific height */
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;    
+    
+}
+.layout{
+width: 50%;
+}
+.layout-texti{
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+}
+
+
+.flex3 {
+  background-color: #2D2D2D;  
+    /* Set a specific height */
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.kort{
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+label {
+  cursor: pointer;
+}
+label:focus {
+  outline: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #545454;
+  width: 240px;
+  height: 100%;
+  transform: translate3d(-240px, 0, 0);
+  transition: transform 0.35s;
+  z-index: 90000; 
+}
+.menu label.menu-toggle {
+  position: absolute;
+  right: -60px;
+  width: 60px;
+  height: 60px;
+  line-height: 0px;
+  display: block;
+  padding: 0;
+  text-indent: -9999px;
+  background: #545454 url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+}
+.menu ul li > label {
+
+  background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
+}
+.menu ul li a, .menu ul li label {
+
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #fff;
+}
+.menu ul li a:hover, .menu ul li label:hover {
+  color: #666;
+}
+
+/* hide inputs */
+.menu-checkbox {
+  display: none;
+}
+
+/* hide navigation icon for sublabels */
+.menu .menu label.menu-toggle {
+  background: none;
+}
+
+/* fade in checked menu */
+.menu-checkbox:checked + .menu {
+  transform: translate3d(0, 0, 0);
+}
+
+/* for show */
+
+/* Small screens */
+@media all and (max-width: 768px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;    
+  }  
+
+.banner{
+  background-position: middle;
+    position: relative;
+    order: 1;    
+    height: 730px;    
+    background-size: cover;
+    align-items: center;
+  }
+  
+  .flex1{
+    position: relative;
+    order: 2;
+    min-height: 100%;
+    height: 730px;
+    background-position: center;
+    background-size: cover;
+  }
+  .flex2 {
+    
+    position: relative;
+    order: 3;
+    min-height: 100%;
+    height: 730px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main {
+    order: 4;
+  }
+
+  .flex3 {
+    
+    position: relative;
+    order: 5;
+    min-height: 100%;
+    height: 730px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .footer {
+    order: 6;
+  }
+}
+@media all and (min-width: 769em) {
+
+.banner{
+  background-position: middle;
+    position: relative;
+    order: 1;    
+    height: 1020px;
+    background-position: center;
+    background-size: cover;
+  }
+  .flex1{
+    position: relative;
+    order: 2;
+    min-height: 100%;
+    height: 1100px;
+    background-position: center;
+    background-size: cover;
+  }
+  .flex2 {
+    
+    position: relative;
+    order: 3;
+    min-height: 100%;
+    height: 1020px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main {
+    order: 4;
+  }
+
+  .flex3 {
+    
+    position: relative;
+    order: 5;
+    min-height: 100%;
+    height: 1020px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .footer {
+    order: 6;
+  }
+}
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .banner{
+    order: 1;
+    height: 640px;
+  }
+
+  .flex1{
+    order: 2;
+    height: 700px;    
+  }
+  .flex2 {
+    order: 3;
+    height: 690px;
+  }
+
+  .main {
+    order: 4;
+  }
+
+  .flex3 {
+    order: 5;
+    height: 600px;
+  }
+
+  .footer {
+    order: 6;
+  }
+
+}
+
+
+
+/* http://www.menucool.com */
+
+#sliderFrame, #sliderFrame div {
+    box-sizing: content-box;
+}
+#sliderFrame 
+{
+    width:1200px;
+    margin:0 auto; /*center-aligned*/
+}
+
+#slider, #slider .sliderInner {
+    width:1200px;height:490px;/* Must be the same size as the slider images */
+    border-radius:3px;
+}
+
+#slider {
+    background-color:white;
+    position:relative;
+    top: -200px;
+    left: 250px;
+    margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+    box-shadow: 0px 1px 5px #999999;
+}
+
+/* the link style (if an image is wrapped by a link) */
+#slider a.imgLink, #slider .video {
+    z-index:2;
+    cursor:pointer;
+    position:absolute;
+    top:0px;left:0px;border:0;padding:0;margin:0;
+    width:100%;height:100%;
+}
+#slider .video {
+    background:transparent url(video.png) no-repeat 50% 50%;
+}
+
+/* Caption styles */
+#slider .mc-caption {
+    position:absolute;
+    width:100%;
+    height:auto;
+    padding:10px 0;/* 10px will increase the height.*/
+    left:0px;
+    bottom:0px;top:auto;
+    overflow:hidden;
+    font: bold 14px/20px Arial;
+    color:#EEE;
+    text-align:center;
+    background:rgba(0,0,0,0.3);
+}
+#slider .mc-caption a {
+    color:#FB0;
+}
+#slider .mc-caption a:hover {
+    color:#DA0;
+}
+
+
+/* ------ built-in navigation bullets wrapper ------*/
+#slider .navBulletsWrapper  {
+    top:320px;
+    text-align:center;
+    background:none;
+    position:relative;
+    z-index:3;
+}
+
+/* each bullet */
+#slider .navBulletsWrapper div 
+{
+    width:11px; height:11px;
+    font-size:0;color:White;/*hide the index number in the bullet element*/
+    position: relative;
+    top: 150px;
+    background:transparent url(../images/bullet.png) no-repeat 0 0;
+    display:inline-block; *display:inline; zoom:1;
+    overflow:hidden;cursor:pointer;
+    margin:0 6px;/* set distance between each bullet*/
+}
+
+#slider .navBulletsWrapper .active {background-position:0 -11px;}
+
+
+/* --------- Others ------- */
+
+#slider img, #slider>b, #slider a>b {
+    position:absolute; border:none; display:none;
+}
+
+#slider .sliderInner {
+    overflow:hidden;
+    position:absolute; top:0; left:0;
+}
+
+#slider>a, #slider video, #slider audio {display:none;}
+#slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
